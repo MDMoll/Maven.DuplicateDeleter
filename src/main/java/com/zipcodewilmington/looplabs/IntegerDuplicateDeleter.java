@@ -28,6 +28,4 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         return Arrays.stream(array).filter(i -> Collections.frequency(Arrays.asList(array), i) != Duplicates)
                 .toArray(Integer[]::new);
     }
-    
-    
 }
